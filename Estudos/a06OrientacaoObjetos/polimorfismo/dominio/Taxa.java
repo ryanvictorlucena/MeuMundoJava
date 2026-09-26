@@ -1,4 +1,4 @@
-package a06OrientacaoObjetos.polimorfismo;
+package a06OrientacaoObjetos.polimorfismo.dominio;
 
 public interface Taxa {
     double calcularImposto();

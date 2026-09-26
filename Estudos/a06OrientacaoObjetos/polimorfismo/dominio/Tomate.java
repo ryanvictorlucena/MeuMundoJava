@@ -1,4 +1,4 @@
-package a06OrientacaoObjetos.polimorfismo;
+package a06OrientacaoObjetos.polimorfismo.dominio;
 
 public class Tomate extends Produto {
     
@@ -9,7 +9,6 @@ public class Tomate extends Produto {
  
     @Override
     public double calcularImposto() {
-        System.out.println("Valor do imposto: ");
         return this.valor * IMPOSTO_POR_CENTO;
     }
 }

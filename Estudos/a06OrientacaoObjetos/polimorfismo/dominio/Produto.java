@@ -1,4 +1,4 @@
-package a06OrientacaoObjetos.polimorfismo;
+package a06OrientacaoObjetos.polimorfismo.dominio;
 
 public abstract class Produto implements Taxa{
     protected  String nome;

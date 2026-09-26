@@ -283,3 +283,68 @@ Tem o intuito de oferecer um contrato, antes todos os métodos de uma interface 
     }
 
 ## Polimorfismo
+
+Uma superclasse define métodos podendo ser concreto ou abstratos. As subclasses podem sobrescreber esses métodos oferecendo suas próprias implementações. Quem usar o objeto da duperclasse pode chamar esses métodos sem saber qual implementação específica será usada, isso é decidido em tempo de execução.
+
+    class Animal {
+        void emitirSom() {
+            System.out.println("Som genérico...");
+        }
+    }
+
+    class Cachorro extends Animal {
+        @Override
+        void emitirSom() {
+            System.out.println("Latindo!");
+        }
+    }
+
+    class Gato extends Animal {
+        @Override
+        void emitirSom() {
+            System.out.println("Miando!");
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Animal a1 = new Cachorro();
+            Animal a2 = new Gato();
+
+            a1.emitirSom(); // Latindo!
+            a2.emitirSom(); // Miando!
+        }
+    }
+
+    Nesse exemplo o metodo emitirSom() é chamado da mesma forma, mas o resultado vai ser diferente dependendo do objeto.
+
+Quando temos uma interface que contém um metodo genérico podemos instanciar essa interface e chamar um objeto nela (que implemente essa interface). Por exemplo:
+
+    public interface Som {
+        void emitirSom();
+    }
+
+    class Cachorro implements Som {
+        @Override
+        void emitirSom() {
+            System.out.println("Latindo!");
+        }
+    }
+
+    class Gato implements Som {
+        @Override
+        void emitirSom() {
+            System.out.println("Miando!");
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Som som1 = new Gato();
+            Som som2 = new Cachorro();
+            som1.emitirSom(); //miando
+            som2.emitirSom(); //latindo
+        }
+    }
+
+Em resumo, com apenas um único método genérico, você pode obter varios resultados dependendo do objeto que chamar esse método. Isso permite que não seja necessário criar o mesmo método varias vezes, deixando seu código mais limpo e organizado.
