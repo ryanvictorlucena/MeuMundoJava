@@ -1,4 +1,4 @@
-package associação.exercicio;
+package a06OrientacaoObjetos.associação.exercicio;
 
 public class Professor {
     private String nome;

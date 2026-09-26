@@ -1,5 +1,4 @@
-package associação;
-
+package a06OrientacaoObjetos.associação;
 public class Time {
     private String nome;
 

@@ -1,4 +1,4 @@
-package dominio;
+package a06OrientacaoObjetos.dominio;
 
 public class Soma {
     

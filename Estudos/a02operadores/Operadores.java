@@ -1,3 +1,4 @@
+package a02operadores;
 public class Operadores {
     public static void main(String[] args) {
         int number1 = 10;
@@ -18,6 +19,7 @@ public class Operadores {
         double dinheiro = 100;
         boolean cupom = true;
         boolean resultado2 = dinheiro >= 200 || cupom == true;
+        System.out.println(resultado);
         System.out.println(resultado2);
     }
 }

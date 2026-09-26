@@ -1,4 +1,4 @@
-package leitura;
+package a06OrientacaoObjetos.leitura;
 import java.util.Scanner;
 
 public class Leitura {

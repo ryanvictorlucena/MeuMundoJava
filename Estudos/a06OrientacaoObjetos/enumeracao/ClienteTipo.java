@@ -1,4 +1,4 @@
-package enumeracao;
+package a06OrientacaoObjetos.enumeracao;
 
 public enum ClienteTipo {
     PESSOA_FISICA(1),

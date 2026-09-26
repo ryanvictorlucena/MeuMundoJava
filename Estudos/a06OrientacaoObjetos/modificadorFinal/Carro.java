@@ -1,4 +1,4 @@
-package modificadorFinal;
+package a06OrientacaoObjetos.modificadorFinal;
 
 public class Carro {
     private String nome;

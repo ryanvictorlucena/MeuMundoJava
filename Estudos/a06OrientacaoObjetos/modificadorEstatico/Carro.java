@@ -1,4 +1,4 @@
-package modificadorEstatico;
+package a06OrientacaoObjetos.modificadorEstatico;
 
 public class Carro {
     private String nome;

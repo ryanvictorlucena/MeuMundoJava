@@ -1,3 +1,4 @@
+package a05arrays;
 public class Arrays {
     public static void main(String[] args) {
         int[] lista = new int[3];

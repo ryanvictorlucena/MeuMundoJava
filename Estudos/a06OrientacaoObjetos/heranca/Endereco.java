@@ -1,4 +1,4 @@
-package heranca;
+package a06OrientacaoObjetos.heranca;
 
 public class Endereco {
     private String rua;

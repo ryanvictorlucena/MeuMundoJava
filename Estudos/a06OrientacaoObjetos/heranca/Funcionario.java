@@ -1,4 +1,4 @@
-package heranca;
+package a06OrientacaoObjetos.heranca;
 public class Funcionario extends Pessoa {
     private double salario;
 

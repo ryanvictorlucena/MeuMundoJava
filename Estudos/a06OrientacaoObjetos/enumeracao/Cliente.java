@@ -1,4 +1,4 @@
-package enumeracao;
+package a06OrientacaoObjetos.enumeracao;
 
 public class Cliente {
     private String nome;

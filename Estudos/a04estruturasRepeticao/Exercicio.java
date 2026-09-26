@@ -1,3 +1,4 @@
+package a04estruturasRepeticao;
 public class Exercicio {
     
     public static void main(String[] args) {

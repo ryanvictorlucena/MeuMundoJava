@@ -1,4 +1,4 @@
-package associação;
+package a06OrientacaoObjetos.associação;
 
 public class Jogador {
 

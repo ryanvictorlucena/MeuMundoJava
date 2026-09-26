@@ -1,3 +1,4 @@
+package a03estruturasCondicionais;
 public class Exercicio {
     public static void main(String[] args) {
         double salarioAnual = 25000;

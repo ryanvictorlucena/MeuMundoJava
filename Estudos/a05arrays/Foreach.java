@@ -1,3 +1,4 @@
+package a05arrays;
 public class Foreach {
     public static void main(String[] args) {
         int[][] dias = new int[3][3];

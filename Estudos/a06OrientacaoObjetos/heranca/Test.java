@@ -1,5 +1,4 @@
-package heranca;
-
+package a06OrientacaoObjetos.heranca;
 public class Test {
     public static void main(String[] args) {
         Endereco e = new Endereco("Rua dos desejos", "22222-000");
