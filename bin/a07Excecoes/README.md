@@ -39,6 +39,8 @@ Também temos o bloco finally que é opcional - pode ser usado ou não - ele vai
         System.out.println("Finalizando bloco...");
     }
 
+Vários catch podem ser utilizados, em casos onde podem ter erros de tipos diferentes, por exemplo.
+
 ## Exceções: Unchecked
 
 Exceções do tipo unchecked são exceções que não precisam der tratadas obrigatoriamente pelo compilador. Isso que dizer que você não precisa de um try/catch ou throws. Essas exceçõs geralmente indicam erros lógicos ou de programação que poderiam ser evitados com um código mais correto.
@@ -46,3 +48,7 @@ Exceções do tipo unchecked são exceções que não precisam der tratadas obri
 ## Exceções: Checked
 
 Ao contrário das exceções do tipo unchecked, o compilador te obriga a trata-las seja com try/catch ou com throws. Elas representam situações que podem acontecer, mas não são necessariamente um erro de programação, são aqueles erros esperados, como por exemplo uma entrada inválida. Caso aconteca de você não tratar uma situação dessa, o código não vai compilar.
+
+## Exceção customizada
+
+É possível criar sua própria exceção, sendo do tipo unchecked ou checked. Você cria e pode definir seu tratamento baseado na lógica do sistema, essa classe deve ser uma extensão da classe Exception ou RunTimeException e funciona da mesma maneira que as exceções já existentes, se for do tipo checked é obrigado trata-las e se for do tipo unchecked não.

@@ -1,17 +1,15 @@
 package a07Excecoes;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 
 public class Test {
     public static void main(String[] args) {
-        /*int[] numeros = {1, 2, 3};
-        System.out.println(numeros[5]);
-        o compilador não reclama se eu tentar retornar um indice inexistente, 
-        mas esse código quebra em tempo de execução*/
-        //System.out.println(div(10, 0));
-        Test e = new Test();
-        e.abreConexao();
+        lerArquivo();
     }
 
     public static void createNewArch() {
@@ -38,6 +36,31 @@ public class Test {
             e.printStackTrace();
         } finally {
             System.out.println("Fechando recurso liberado pelo SO");
+        }
+    }
+
+    public static void lerArquivo() {
+        try (Leitor1 leitor1 = new Leitor1();
+            Leitor2 leitor2 = new Leitor2()) {
+
+        } catch (IOException e) {
+            
+        }
+    }
+
+    public static void lerArquivo2() {
+        Reader reader = null;
+        try {
+        reader = new BufferedReader(new FileReader("test.txt"));
+        } catch (FileNotFoundException e){
+            e.printStackTrace();
+        } finally {
+            try {
+                if (reader != null) 
+                    reader.close();
+            } catch (IOException exception) {
+                exception.printStackTrace();
+            }
         }
     }
 }
