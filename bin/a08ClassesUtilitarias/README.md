@@ -25,4 +25,47 @@ Existem métodos auxiliares muito úteis que em algum momento serão necessário
     - isUpperCase/isLowerCase, retorna um booleano indicando se algo está em maiúsculo ou mininusculo.
 
     - toUpperCase/toLowerCase, muda algo passado como parametro para maiúsculo ou minusculo, respectivamente.
-    
+
+## String
+
+Em java strings são imutáves, ou seja, não pode ser alterada. Quando fazemos uma operação onde modificamos uma string, na verdade um novo objeto em memória é criado e o valor antigo é perdido, por exemplo:
+
+    String nome = "Ryan";
+    nome.concat(" Victor");
+    System.out.println(nome);
+
+    saida:
+    Ryan
+
+Para que uma alteração seja feita, aquele valor de nome deve ser sobrescrito pelo novo valor, por exemplo:
+
+    String nome = "Ryan";
+    nome = nome.concat(" Victor");
+    System.out.println(nome);
+
+    saida:
+    Ryan Victor
+
+A referência ao objeto de memória que antes estava associado a nome = "Ryan", agora passa a referênciar um novo objeto, nome = "Ryan Victor".
+
+### StringBuilder
+
+Uma classe utilitária criada para lidar com essas situações de imutabilidade de strings em java. Permite a manipulação de texto de forma mutável, ou seja, o conteúdo pode ser alterado sem a necessidade de criar um novo objeto. É recomendado usar o StringBuilder quando não há multiplas threads acessando o mesmo objeto, um exemplo de uso:
+
+    StringBuilder sb = new StringBuilder("Meu");
+    sb.append(" mundo").append(" java");
+    System.out.println(sb.toString());
+
+    saida:
+    Meu mundo java
+
+### StringBuffer
+
+Assim como o StringBuilder é uma classe utilitária que permite a manipulação de texto, podendo altera-los. Mas, é usada geralmente em situações onde várias threads podem acessar o mesmo objeto. Um exemplo de uso de StringBuffer (que por sinal é parecido com o StringBuilder):
+
+    StringBuffer sb = new StringBuffer("Meu");
+    sb.append(" mundo").append(" java");
+    System.out.println(sb.toString());
+
+    saida:
+    Meu mundo java
