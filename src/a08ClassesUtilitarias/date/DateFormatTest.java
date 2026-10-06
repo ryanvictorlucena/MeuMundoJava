@@ -8,6 +8,7 @@ public class DateFormatTest {
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
         DateFormat[] df = new DateFormat[7];
+
         df[0] = DateFormat.getInstance();
         df[1] = DateFormat.getDateInstance();
         df[2] = DateFormat.getDateTimeInstance();
