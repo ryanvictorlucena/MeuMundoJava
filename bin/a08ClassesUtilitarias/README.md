@@ -69,3 +69,26 @@ Assim como o StringBuilder é uma classe utilitária que permite a manipulação
 
     saida:
     Meu mundo java
+
+### Expressões Regulares - Regex
+
+Uma linguagem utilizada para buscar, validar e manipular textos usando padrões.
+
+- Pattern: É uma classe que compila a expressão regular.
+
+    String texto = "a";
+    Pattern pattern = Pattern.compile(texto);
+
+Aqui o pattern representa o padrão de busca "a".
+
+- Matcher: É a classe que aplica o padrão em um texto.
+
+    Matcher matcher = pattern.matcher("banana");
+
+Aqui o matcher vai aplicar o padrão "a" sobre a string banana. Para encontrar as ocorrências usamos o método find()
+
+    while (matcher.find()) {
+        System.out.print(matcher.group()) --> retorna o conteúdo encontrado
+        System.out.print(matcher.start()) --> retorna a posição onde a ocorrência começa
+        System.out.print(matcher.end()) --> retorna a posição após o imediato ultimo caractere encontrado
+    }
