@@ -37,3 +37,26 @@ Para que a igualdade possa ser comparada de maneira correta entre as trings, uti
 Agora terá uma saida true, pois o conteúdo das duas strings é exatamente o mesmo.
 
 ## Relação com coleções
+
+O método equals() é muito importante em coleções do Java, como List, Set e Map, pois essas estruturas utilizam esse método para verificar se dois objetos devem ser considerados iguais. Por isso, quando criamos nossas próprias classes, geralmente precisamos sobrescrever os métodos equals() e hashCode() para que as coleções funcionem corretamente.
+
+### Melhorias realizadas
+
+Gramática
+
+- Corrigido "pra" para "para".
+- Corrigido "por que" para "porque" quando usado como explicação.
+- Ajustado uso de vírgulas.
+
+Clareza
+
+- Substituído "olhar se é o mesmo objeto" por "verifica se as duas variáveis apontam para o mesmo objeto".
+- Explicado que equals() realiza uma comparação lógica do conteúdo.
+
+Formatação
+
+- Separação em parágrafos mais curtos.
+- Uso de blocos de código para facilitar a leitura.
+- Inclusão de uma seção explicando a relação entre equals() e coleções Java.
+
+## HashCode
