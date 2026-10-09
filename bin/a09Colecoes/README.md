@@ -60,3 +60,26 @@ Formatação
 - Inclusão de uma seção explicando a relação entre equals() e coleções Java.
 
 ## HashCode
+
+O método hashCode() retorna um número inteiro que representa um objeto. Ele é utilizado principalmente por coleções baseadas em hash, como HashSet, HashMap e Hashtable.
+
+O principal objetivo do hashCode() é ajudar o java a encontrar objetos de forma mais rápida, sem precisar comparar todos os elementos da coleção.
+
+Exemplo:
+
+    String nome = "Patrick";
+    System.out.println(nome.hashCode());
+
+Saída:
+
+    871255254
+
+### Relação do equals e do hashCode
+
+Existe uma regra muito importante:
+
+    Se dois objetos são iguais pelo método equals(), eles obrigatoriamente devem possuir o mesmo hasCode().
+
+Por isso, sempre que sobrescrevermos (override) o método equals(), geralmente também devemos sobrescrever hashCode().
+
+Em resumo, o hashCode() te diz onde procurar enquanto que o equals() te confirma se aquele é o objeto correto.
