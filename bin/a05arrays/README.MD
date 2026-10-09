@@ -1,7 +1,7 @@
 # Arrays
 
-São listas do tipo reference que podem guardar valores de todos os tipos, e até mesmo outras listas. Cada espaço dentro de um array é representado por um indice e é por esses indices que podemos adicionar, acessar ou remover o conteúdo que está la dentro. Os indices vão de 0 a k-1, onde k é o tamanho máximo do array.
-Ao criar uma lista sem a inserção de valores, deve ser feita uma inicialização, por exemplo
+Arrays são listas do tipo reference que podem guardar valores de todos os tipos e até mesmo outras listas. Cada espaço dentro de um array é representado por um índice e é por esses índices que podemos adicionar, acessar ou remover o conteúdo que está la dentro. Os índices vão de 0 a k-1, onde k é o tamanho máximo do array.
+Ao criar uma lista sem a inserção de valores, deve ser feita uma inicialização.
 
 ## Formas de declarar um array
 
@@ -11,19 +11,19 @@ Ao criar uma lista sem a inserção de valores, deve ser feita uma inicializaç�
 
         int[] caixa = new int[k]; (onde k pode ser qualquer inteiro).
 
-    Outra forma seria colocar os valores diretamente
+Outra forma seria colocar os valores diretamente
 
         int[] numeros = {1, 2, 3, 4, 5};
 
-    mas, se considerarmos uma quantidade muito grande de números, fazer dessa maneira não é interessante.
+mas, se considerarmos uma quantidade muito grande de números, fazer dessa maneira não é interessante.
 
-Cada caixinha referente a cada indice ao ser inicializada tem um valor definido, para inteiros é 0 e para strings é null.
+Cada posição do array, ao ser inicializada, recebe um valor padrão. Para tipos numéricos inteiros, o valor padrão é 0; para referências, como String, o valor padrão é null.
 
 ## Adição em um array
 
-Você precisa dizer o indice no qual você quer adicionar um determinado valor (do tipo do array). Sempre que você adiciona um novo valor a uma posição do array, na verdade você so está sustituindo um valor que já estava la.
+Você precisa dizer o índice no qual você quer adicionar um determinado valor (do tipo do array). Sempre que você adiciona um novo valor a uma posição do array, na verdade você so está sustituindo um valor que já estava la.
 
-    nomeLista[i] = valor; (i = indice/posição inteiro)
+    nomeLista[i] = valor; (i = índice/posição inteiro)
 
 ## Remoção em um array
 
@@ -34,4 +34,4 @@ Aqui você não remove realmente o valor, não é possivel. Então para represen
 
 ## Função length
 
-Uma função que retorna o tamanho total do array. Observação -> Os indices de um array começam em 0, então ao retornar o ultimo indice de um array de tamanho 10, o valor retornado sera 9. O length retorna exatamente o tamanho 10.
+Uma função que retorna o tamanho total do array. Observação -> Os índices de um array começam em 0, então ao retornar o ultimo índice de um array de tamanho 10, o valor retornado sera 9. O length retorna exatamente o tamanho 10.

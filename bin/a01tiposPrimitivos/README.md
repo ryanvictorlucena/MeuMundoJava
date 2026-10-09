@@ -9,4 +9,4 @@ Guardam em memória um valor simples:
 - byte -> guarda algo muito pequeno (1 byte);
 - short -> guarda algo maior que byte e menor que o padrão (2 bytes);
 - long -> destinado a variaveis que excedem o tamanho padrão (8 bytes);
-- boolean -> True ou False (1 byte);
+- boolean -> True ou False (1 byte).

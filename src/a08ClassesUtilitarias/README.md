@@ -6,7 +6,7 @@ Geralmente refere-se a métodos estáticos de apoio, simplificando operações c
 
 São objetos que encapsulam tipos primitivos (byte, short, int, long, float, double, char, boolean), aqueles tipos que só gardam um valor na memória. Um wrapper é criado mudando a inicial do tipo para maiúscula, com exceção do tipo inteiro e caracter (int -> Integer e char -> Character).
 
-Existem métodos auxiliares muito úteis que em algum momento serão necessários
+Existem métodos auxiliares muito úteis que em algum momento serão necessários, como por exemplo:
 
     - Métodos parse, alteram uma string númerica para um número, por exemplo:
 

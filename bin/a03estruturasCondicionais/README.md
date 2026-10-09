@@ -8,33 +8,38 @@ A condição que fica dentro dos parenteses do if e do else if sempre tem que re
     if (condição) {
         comando a ser executado
     }
-se isso for verdadeiro execute o bloco dentro dele, senão...
+
+Se isso for verdadeiro execute o bloco dentro dele, senão...
 
 ## Else -> senão
 
     else {  
         comando a ser executado
     }
-se o bloco de cima não for executado, faça esse
--else if -> senão se:
+
+Se o bloco de cima não for executado, faça esse.
+
+## Else if -> senão se
+
     else if (condição) {
         comando a ser executado
     }
-geralmente usado quando tem mais de duas condições que devem ser executadas somente se a condição principal não for atendida
+
+Geralmente usado quando tem mais de uma condições que deve ser executadas somente se a condição principal não for atendida.
 
 ## Óperador ternário
 
 Associa um valor diretamente a uma variavel
 
-- (condição) ? verdadeiro : falso
+    (condição) ? verdadeiro : falso
 
-recomendado quando tem um simples if else pra um caso onde referência o valor diretamente a uma variável
+recomendado quando tem um simples if else pra um caso onde referência o valor diretamente a uma variável.
 
 ## Tabela verdade
 
-and/ e/ && = Verdadeiro se ambas as condições são verdade, caso alguma seja falsa, o resultado final será falso;
+- and/ e/ && = Verdadeiro se ambas as condições são verdade, caso alguma seja falsa, o resultado final será falso;
 
-or/ ou/ || = Verdadeiro se pelo menos uma das condições é verdadeira, só é falso se ambas forem falsa.
+- or/ ou/ || = Verdadeiro se pelo menos uma das condições é verdadeira, só é falso se ambas forem falsa.
 
 ## Switch
 

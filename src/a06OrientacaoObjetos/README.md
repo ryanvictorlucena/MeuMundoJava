@@ -18,7 +18,8 @@ Em uma classe, ao definir variáveis do tipo primitivo, podemos deixar essas var
 Quando queremos acessar métodos de outra classe(do mesmo pacote) usamos a seguinte estrutura:
 
     NomeClasse variavel = new NomeClasse();
-    Dessa forma que é criado um objeto
+
+Dessa forma que é criado um objeto.
 
 ## Métodos
 
@@ -44,11 +45,11 @@ O return pode ser usado como um break, quando é necessário forçar uma parada 
 ## Construtor
 
 Um construtor não possui uma tipagem.
-    Estrutura
 
-    public nomeClasse(parâmetros) {}
+    public nomeClasse(parâmetros) {
+    }
 
-Pode existir dois construtores com o mesmo nome, se o tipo de parâmetro for diferente. Uma coisa interessante que acontece e que caso os construtores tenham alguns dos parâmetros parecidos, você pode delegar a respónsabilidade de ficar com os parâmetros parecidos a só um e o outro ganha um this(parâmetros similares) mais os seus parâmetros pessoais.
+Pode existir mais de um construtores com o mesmo nome, se o tipo de parâmetro for diferente. Uma coisa interessante que acontece é que caso os construtores tenham alguns dos parâmetros parecidos, você pode delegar a respónsabilidade de ficar com os parâmetros parecidos a só um e o outro ganha um this(parâmetros similares) mais os seus parâmetros pessoais.
 
 Ao passar parâmetros no construtor, os dados referêntes a cada atributo presente ali, deve ser atendido. Se eu tenho um construtor com o parâmetro nome, ao inicializar-lo devo passar um nome do mesmo tipo.
 
@@ -72,6 +73,7 @@ Quando esse segundo construtor for chamado, ele vai chamar o primeiro que é res
 ## Modificador Static
 
 Usado quando queremos fazer referência a classe em si e não somente a instância. Quando atribuimos um modificador static a uma variável, sempre que modificarmos ela por um método set, por exemplo, todas as instâncias que fazem referência a essa classe serão alteradas e não somente aquela que você referênciou.
+
 Por exemplo, se você inicializa uma váriavel da classe Carro
 
     private double limiteVelocidade = 300;
@@ -144,7 +146,7 @@ Usando uma biblioteca chamada scanner é possivel ler dados introduzidos em uma 
 
     Scanner sc = new Scanner(System.in);
 
-Dependendo do tipo do dado a ser lido, existe uma função expecifica, por exemplo
+Dependendo do tipo do dado a ser lido, existe uma função expecifica, por exemplo:
 
 - Para ler um inteiro usamos
 
@@ -316,7 +318,7 @@ Uma superclasse define métodos podendo ser concreto ou abstratos. As subclasses
         }
     }
 
-    Nesse exemplo o metodo emitirSom() é chamado da mesma forma, mas o resultado vai ser diferente dependendo do objeto.
+Nesse exemplo o metodo emitirSom() é chamado da mesma forma, mas o resultado vai ser diferente dependendo do objeto.
 
 Quando temos uma interface que contém um metodo genérico podemos instanciar essa interface e chamar um objeto nela (que implemente essa interface). Por exemplo:
 

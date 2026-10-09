@@ -10,7 +10,7 @@ Uma das funções que permitem um loop. Sua estrutura se da como:
         bloco que entrara em loop
     }
 
-    Também existem variações como o while True e o do While, onde:
+Também existem variações como o while True e o do While, onde:
 
     do {
         bloco de execeção do loop
@@ -20,7 +20,7 @@ A principal diferença do while pro do while é que o do while executa pelo meno
 
 ## For
 
-Uma função de loop parecida com o while, a principal diferença é que no for existe uma condição de parada, enquanto que no while existe uma condição de continuação. Sua sitaxe é:
+Uma função de loop parecida com o while, a principal diferença é que no for existe uma condição de parada, enquanto que no while existe uma condição de continuação. Sua sitaxe padrão é:
 
     for (int i = 0; i < k; i++) {
         bloco de execução em loop
@@ -40,24 +40,46 @@ Não é um loop, mas é uma maneira de parar a qualquer momento, mesmo se ele ai
 
 ## Continue
 
-Ao contrário do break que para uma execução, o continue continua, exemplo:
+Ao contrário do break que para uma execução, o continue continua, por exemplo:
 
 Contar de 20 a 100, mas seu contador começa em 0
 
-    for(;;){
-        if (i < 20) continue;
-        ...
-    }
-    Aqui ele vai retornar a partir de 20 e ignorar tudo abaixo.
+    for(int i = 0; i <= 100; i++) {
+            if (i < 20) {
+                continue;
+            }
+            System.out.println(i);
+        }
+
+Nesse caso, sempre que i for menor que 20, o continue será executado e o restante do código da iteração será ignorado. Quando i chegar a 20, os números passarão a ser exibidos normalmente.
 
 ## Foreach
 
-Um loop usado em arrays:
+O foreach é uma estrutura de repetição utilizada para percorrer arrays e coleções de forma mais simples.
 
-    for(tipo n: nomeArray){
-        ...
+Sua sintaxe é:
+
+    for (tipo variavel : array) {
+        System.out.println(variavel);
     }
 
-Diferente do for tradicional, esse aqui não tem indices, você trabalha diretamente com cada valor que esta dentro do array.
-Aqui n representa uma variável que vai receber os valores do array, a cada novo loop ela recebe um novo valor.
-A variável nomeArray é um array com os valores que vão ser trabalhados.
+Exemplo:
+
+    String[] nomes = {"Patrick", "Maria", "João"};
+    for (String nome : nomes) {
+        System.out.println(nome);
+    }
+
+Saída:
+
+    Patrick
+    Maria
+    João
+
+Diferentemente do for tradicional, o foreach não trabalha com indices. Em vez disso, ele percorre automaticamente cada elemento que está dentro do array.
+
+No exemplo acima:
+
+- nome é a variável que recebe cada valor do array.
+- nomes é o array que está sendo percorrido.
+- A cada iteração, nome recebe um novo elemento do array.
