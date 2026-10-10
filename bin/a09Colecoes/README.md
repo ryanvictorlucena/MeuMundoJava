@@ -136,3 +136,35 @@ As principais operações que são realizada em listas são:
 - size: Retorna a quantidade de elementos da lista.
 
     lista.size();
+
+### Listas Ordenadas
+
+Quando falamos em ordenação de listas existem métodos que fazem isso de formas diferentes, podendo ser em ordem crescente ou decrescente, por exemplo. Em uma lista de inteiros, geralmente ordenamos em ordem crescente. Em uma lista de strings, geralmente ordenamos em ordem alfabetica.
+
+O método Collections.sort(lista) faz exatamente isso, ordena em ordem alfabetica (strings) e ordem crescente (inteiros).
+
+    List<Integer> idades = new ArrayList<>();
+    idades.add(21);
+    idades.add(19);
+    idades.add(41);
+    idades.add(25);
+
+    Collections.sort(idades);
+
+    for (Integer idade : idades) {
+        System.out.print(idade + " ");
+    }
+
+    saída:  19 21 25 41
+
+## Comparable
+
+Em java, Comparable é uma interface usada para definir a ordem natural dos objetos de uma classe. Ela permite que listas sejam ordenadas com métodos como Collections.sort() ou List.sort().
+
+### compareTo()
+
+    obj1.compareTo(obj2)
+
+- Número negativo: obj1 vem antes de obj2.
+- 0: são considerados iguais para ordenação.
+- Número positivo: obj1 vem depois de obj2.
