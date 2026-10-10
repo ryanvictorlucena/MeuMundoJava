@@ -3,9 +3,16 @@ package a09Colecoes.test;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+import java.util.Comparator;
 import a09Colecoes.dominio.Manga;
 
+class MangaByIdComparator implements Comparator<Manga> {
+
+    @Override 
+    public int compare(Manga manga1, Manga manga2) {
+        return Long.compare(manga1.getId(), manga2.getId());
+    }
+}
 public class MangaTest {
     public static void main(String[] args) {
         List<Manga> mangas = new ArrayList<>();
@@ -22,6 +29,14 @@ public class MangaTest {
         System.out.println("---------------------------------");
 
         Collections.sort(mangas);
+        for (Manga manga : mangas) {
+            System.out.println(manga);
+        }
+
+        System.out.println("---------------------------------");
+
+        //Collections.sort(mangas, new MangaByIdComparator());
+        mangas.sort(new MangaByIdComparator());
         for (Manga manga : mangas) {
             System.out.println(manga);
         }

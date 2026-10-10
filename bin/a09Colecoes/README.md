@@ -159,7 +159,7 @@ O método Collections.sort(lista) faz exatamente isso, ordena em ordem alfabetic
 
 ## Comparable
 
-Em java, Comparable é uma interface usada para definir a ordem natural dos objetos de uma classe. Ela permite que listas sejam ordenadas com métodos como Collections.sort() ou List.sort().
+Em java, Comparable é uma interface usada para definir a ordem natural dos objetos de uma classe. Ela permite que listas sejam ordenadas com métodos como Collections.sort() ou List.sort(). A própria classe sabe como se ordenar.
 
 ### compareTo()
 
@@ -168,3 +168,20 @@ Em java, Comparable é uma interface usada para definir a ordem natural dos obje
 - Número negativo: obj1 vem antes de obj2.
 - 0: são considerados iguais para ordenação.
 - Número positivo: obj1 vem depois de obj2.
+
+## Comparator
+
+Comparator é uma interface do java usada para definir critérios de ordenação externos a uma classe. Diferente do Comparable, você pode criar vários comparadores diferentes para a mesma classe. A ordenação é definida fora da classe.
+
+### compare()
+
+    int compare(T o1, T o2)
+
+- Maior que 0: o1 vem antes de o2.
+- Igual a 0: iguais para ordenação.
+- Menor que 0: o1 vem depois de o2.
+
+Uma classe pode implementar apenas um Comparable, mas você pode criar quantos Comparators quiser.
+
+    Comparable = ordem natural do objeto.
+    Comparator = ordem personalizada do objeto.
