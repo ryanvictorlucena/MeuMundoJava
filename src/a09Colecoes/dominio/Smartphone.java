@@ -48,4 +48,9 @@ public class Smartphone {
     public int hashCode() {
         return serialNumber == null ? -1 : this.serialNumber.hashCode();
     }
+
+    @Override
+    public String toString() {
+        return "Marca: " + this.marca + "\nNúmero de série: " + this.serialNumber;
+    }
 }

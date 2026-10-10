@@ -108,3 +108,31 @@ A implemenetação mais usada de uma lista é o ArrayList.
     saída:
 
     [João, Maria, Pedro]
+
+### Operações em Listas
+
+As principais operações que são realizada em listas são:
+
+- add: Adiciona um elemento a uma lista, que seja do mesmo tipo. Normalmente adiciona esse elemento no fim da lista, mas pode ser passado o índice de onde você quer colocar o novo elemento.
+
+    1- lista.add(elemento);
+
+    2- lista.add(0, elemento);
+
+- remove: Remove um elemento da lista. Normalmente recebe um índice ou um elemento como parâmetro.
+
+    1- lista.remove(0);
+
+    2- lista.remove(elemento);
+
+- contains: Verifica se um elemento passado como parâmentro está na lista.
+
+    lista.contains(5);
+
+- get: Obtém um elemento através do índice.
+
+    lista.get(0);
+
+- size: Retorna a quantidade de elementos da lista.
+
+    lista.size();
