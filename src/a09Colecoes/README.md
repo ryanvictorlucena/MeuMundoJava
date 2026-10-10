@@ -83,3 +83,28 @@ Existe uma regra muito importante:
 Por isso, sempre que sobrescrevermos (override) o método equals(), geralmente também devemos sobrescrever hashCode().
 
 Em resumo, o hashCode() te diz onde procurar enquanto que o equals() te confirma se aquele é o objeto correto.
+
+## Lista
+
+Em java, uma lista é uma coleção que armazena elementos em sequência, permitindo elementos duplicados e acesso por índices.
+A implemenetação mais usada de uma lista é o ArrayList.
+
+    import java.util.ArrayList;
+    import java.util.List;
+
+    public class Main {
+        public static void main(String[] args) {
+
+        List<String> nomes = new ArrayList<>();
+
+        nomes.add("João");
+        nomes.add("Maria");
+        nomes.add("Pedro");
+
+        System.out.println(nomes);
+        }
+    }
+
+    saída:
+
+    [João, Maria, Pedro]
