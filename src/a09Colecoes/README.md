@@ -155,7 +155,7 @@ O método Collections.sort(lista) faz exatamente isso, ordena em ordem alfabetic
         System.out.print(idade + " ");
     }
 
-    saída:  19 21 25 41
+    saída: 19 21 25 41
 
 ## Comparable
 
