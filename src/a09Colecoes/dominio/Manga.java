@@ -4,11 +4,19 @@ public class Manga implements Comparable<Manga> {
     private String nome;
     private Long id;
     private double valor;
+    private int quantidade;
     
     public Manga(String nome, Long id, double valor) {
         this.nome = nome;
         this.id = id;
         this.valor = valor;
+    }
+
+    public Manga(String nome, Long id, double valor, int quantidade) {
+        this.nome = nome;
+        this.id = id;
+        this.valor = valor;
+        this.quantidade = quantidade;
     }
 
     public String getNome() {
@@ -37,7 +45,7 @@ public class Manga implements Comparable<Manga> {
 
     @Override
     public String toString() {
-        return "Manga (nome = " + nome + ", id = " + id + ", valor = " + valor + ")";
+        return "Manga [nome=" + nome + ", id=" + id + ", valor=" + valor + ", quantidade=" + quantidade + "]";
     }
 
     @Override
@@ -78,6 +86,14 @@ public class Manga implements Comparable<Manga> {
         //return this.nome.compareTo(o.getNome());
         //return Double.compare(valor, o.getValor());
         return id.compareTo(o.getId());
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     

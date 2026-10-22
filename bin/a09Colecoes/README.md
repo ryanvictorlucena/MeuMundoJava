@@ -185,3 +185,66 @@ Uma classe pode implementar apenas um Comparable, mas você pode criar quantos C
 
     Comparable = ordem natural do objeto.
     Comparator = ordem personalizada do objeto.
+
+## Iterator
+
+Em java, Iterator é uma interface usada para percorrer elementos de uma coleção - ArrayList, HashSet, etc - de forma sequencial.
+
+- hashSet(): Verifica se existe próximo elemento.
+- next(): Retorna o próximo elemento.
+- remove(): Remove o elemento atual da coleção.
+
+A principal vantagem do Iterator é permitir a remoção segura de elementos durante a iteração, evitando ConcurrentModificationException.
+
+## Set
+
+Interface de java que não permite elementos duplicados.
+
+Características:
+
+- Não aceita valores repetidos.
+- Não possui índices (get(0), get(1) não existem).
+- É usado quando a unicidade dos dados é importante.
+
+### HashSet
+
+HashSet é uma implementação da interface Set baseada em tabela hash.
+
+Caracteristicas:
+
+- Não permite duplicatas.
+- Inserção e busca geralmente muito rápidas.
+- Não mantém ordem de inserção.
+- Não mantém ordem alfabética.
+
+## Map
+
+Map é uma interface que define o comportamento de estruturas que armazenam chaves e valores.
+
+    Map<Integer, String> pessoas = new HashMap<>();
+
+Você não cria um objeto diretamente de Map, mas sim de uma classe que implementa essa interface, como HashMap, LinkedHashMap ou TreeMap.
+
+### HashMap
+
+É uma implementação da interface Map.
+
+Características:
+
+- Chaves são únicas.
+- Permite valores repetidos.
+- Não mantém a ordem de inserção.
+- Busca, inserção e remoção geralmente são muito rápidas (O(1) em média).
+- Permite uma chave null e vários valores null.
+
+## LinkedHashMap
+
+É uma outra implementação da interface map que combina as características de um hashMap com uma lista encadeada para manter a ordem de elementos.
+
+Características:
+
+- Chaves únicas.
+- Permite valores repetidos.
+- Mantém a ordem de inserção.
+- Busca rápida (semelhante ao HashMap).
+- Permite uma chave null e vários valores null.
