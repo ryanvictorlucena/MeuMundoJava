@@ -5,7 +5,6 @@ Generics permitem criar classes, interfaces e métodos que trabalham com tipos p
 Exemplo sem generics:
 
     List lista = new ArrayList();
-
     lista.add("João");
     lista.add("Maria");
 
@@ -23,3 +22,5 @@ Exemplo com generics:
     String nome = lista.get(0);
 
 Nesse exemplo o compilador garante que a lista só aceita String.
+
+## Classes genericas

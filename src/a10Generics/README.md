@@ -22,3 +22,5 @@ Exemplo com generics:
     String nome = lista.get(0);
 
 Nesse exemplo o compilador garante que a lista só aceita String.
+
+## Classes genericas

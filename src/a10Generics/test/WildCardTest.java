@@ -1,4 +1,4 @@
-package a10Generics;
+package a10Generics.test;
 
 abstract class Animal {
     public abstract void consulta();
