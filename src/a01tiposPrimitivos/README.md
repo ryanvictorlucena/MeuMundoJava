@@ -8,5 +8,5 @@ Guardam em memória um valor simples:
 - char: tipo destinado a caracteres (2 bytes);
 - byte: guarda algo muito pequeno (1 byte);
 - short: guarda algo maior que byte e menor que o padrão (2 bytes);
-- long -> destinado a variaveis que excedem o tamanho padrão (8 bytes);
-- boolean -> True ou False (1 byte).
+- long: destinado a variaveis que excedem o tamanho padrão (8 bytes);
+- boolean: True ou False (1 byte).
