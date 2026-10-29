@@ -27,7 +27,7 @@ Tipos de classes internas
 - Classe local: declarada dentro de um método.
 
     class Externa {
-        void executar() {
+    void executar() {
             class Local {
                 void mostrar() {
                     System.out.println("Classe local");
