@@ -38,3 +38,14 @@ Tipos de classes internas
             local.mostrar();
         }
     }
+
+- Classe anônima: Não possui nome e geralmente implementa uma interface ou estende uma classe.
+
+    Runnable tarefa = new Runnable() {
+        @Override
+        public void run() {
+            System.out.println("Executando...");
+        }
+    };
+
+tarefa.run();
