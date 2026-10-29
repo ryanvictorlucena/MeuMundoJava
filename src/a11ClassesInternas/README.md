@@ -12,6 +12,11 @@ Tipos de classes internas
                 System.out.println("Classe interna");
             }
         }
+        public static void main(String[] args) {
+            Externa e = new Externa();
+            Interna interna = e.new Interna();
+            interna.metodo();
+        }
     }
 
 - Classe interna estática: Usa a palvra-chave static.
